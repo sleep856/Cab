@@ -1,0 +1,82 @@
+/* Legacy CSS file - now using Tailwind CSS */
+/* HomePage styles are now handled by Tailwind classes */
+
+/* Global styles for the app container */
+.app-container {
+  @apply min-h-screen bg-gray-50;
+}
+
+/* Header styles */
+.header {
+  @apply fixed top-0 w-full bg-white/80 backdrop-blur-lg border-b border-gray-200 z-50;
+}
+
+.header-content {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16;
+}
+
+.logo {
+  @apply flex items-center space-x-3;
+}
+
+.logo-text {
+  @apply text-2xl font-bold bg-gradient-to-r from-primary-600 to-primary-800 bg-clip-text text-transparent;
+}
+
+.auth-buttons {
+  @apply flex items-center space-x-4;
+}
+
+.login-btn-header {
+  @apply px-6 py-2 text-gray-700 hover:text-primary-600 font-medium transition-colors duration-200;
+}
+
+.signup-btn {
+  @apply btn-primary;
+}
+
+/* Hero section */
+.hero-section {
+  @apply pt-24 pb-16 px-4 sm:px-6 lg:px-8;
+}
+
+.hero-content {
+  @apply max-w-7xl mx-auto text-center space-y-8;
+}
+
+.cta-buttons {
+  @apply flex flex-col sm:flex-row gap-4 justify-center items-center;
+}
+
+.cta-btn {
+  @apply btn-primary text-lg px-8 py-4;
+}
+
+.cta-btn.secondary {
+  @apply btn-secondary;
+}
+
+/* Features section */
+.features-section {
+  @apply py-20 px-4 sm:px-6 lg:px-8 bg-white;
+}
+
+.features-container {
+  @apply max-w-7xl mx-auto grid md:grid-cols-3 gap-8;
+}
+
+.feature-item {
+  @apply card p-8 text-center;
+}
+
+.feature-icon {
+  @apply text-4xl mb-4;
+}
+
+.feature-title {
+  @apply text-2xl font-bold text-gray-900 mb-4;
+}
+
+.feature-description {
+  @apply text-gray-600 leading-relaxed;
+}
